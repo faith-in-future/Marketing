@@ -1,20 +1,19 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark " style={{"backgroundColor" : "black"}}>
   <div className="container-fluid">
-    <Link className="navbar-brand fs-1 fst-italic" to="/">Faith in Future</Link>
+    <a className="navbar-brand fs-1 fst-italic" to="/">Faith in Future</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav p-3 fs-4">
-        <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-        <Link className="nav-link" to="/login">About</Link>
-        <Link className="nav-link" to="/">Courses</Link>
-        <Link className="nav-link" to="/">Login</Link>
+        <a className="nav-link active" aria-current="page" to="/">Home</a>
+        <a className="nav-link" to="/login">About</a>
+        <a className="nav-link" to="/">Courses</a>
+        <a className="nav-link" to="/">Login</a>
       </div>
     </div>
   </div>
